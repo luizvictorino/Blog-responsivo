@@ -1,0 +1,12 @@
+@import url('../fonts/fonts.css');
+
+:root {
+    /* Cores */
+    --primary-color: #02A28F;
+    --second-color:#616161;
+}
+
+* {
+    font-family: 'Montsserat';
+}
+
