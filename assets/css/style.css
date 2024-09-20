@@ -1,12 +1,50 @@
-@import url('../fonts/fonts.css');
-
 :root {
     /* Cores */
     --primary-color: #02A28F;
-    --second-color:#616161;
+    --second-color: #616161;
 }
 
 * {
-    font-family: 'Montsserat';
+    font-family: 'Montsserat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+main {
+    padding: 30px 150px;
+}
+
+/* Section Header */
+.header {
+    background-color: var(--primary-color);
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+
+    h1 {
+        font-size: 36px;
+        color: #ffffff;
+        padding-left: 156px;
+    }
+}
+
+.section1-img img{
+    width: 744px;
+    height: 396px;
+}
+
+.section2 {
+    height: 56px;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.color-primary {
+    width: 744px;
+    background-color: var(--primary-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
