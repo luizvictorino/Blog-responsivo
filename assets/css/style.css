@@ -1,3 +1,5 @@
+@import url('../fonts/fonts.css');
+
 :root {
     /* Cores */
     --primary-color: #02A28F;
@@ -5,46 +7,148 @@
 }
 
 * {
-    font-family: 'Montsserat', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montsserat', sans-serif;
 }
 
-main {
-    padding: 30px 150px;
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100VH;
 }
 
-/* Section Header */
-.header {
+.container main {
+    flex: 1 1 0;
+}
+
+.font-green,
+.section2 > .nav-bar {
     background-color: var(--primary-color);
-    width: 100vw;
-    height: 70px;
+}
+
+header {
     display: flex;
     align-items: center;
-
-    h1 {
-        font-size: 36px;
-        color: #ffffff;
-        padding-left: 156px;
-    }
+    padding: 16px 156px;
 }
 
-.section1-img img{
+header > h1 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.section1 {
+    margin: 30px 0 0 137px;
+}
+
+.section1 > img {
     width: 744px;
     height: 396px;
 }
 
 .section2 {
-    height: 56px;
-    justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 0 0 18px;
+    width: 727px;
 }
 
-.color-primary {
-    width: 744px;
-    background-color: var(--primary-color);
-    color: #fff;
+.section2 > .nav-bar {
+    height: 56px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 23px;
+    border-radius: 8px;
+}
+
+.section2 > .nav-bar > h2,
+.section2 > .nav-bar > a {
+    color: #fff;
+}
+
+.section2 > .nav-bar > a:hover {
+    color: #eeeeee;
+}
+
+.section2 > .nav-bar > h2 {
+    font-size: 20px;
+}
+
+.section2 > .nav-bar > a {
+    font-size: 14px;
+}
+
+.section3 {
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    gap: 15px;
+    padding: 5px 0 50px 0;
+}
+
+.section3 > .card {
+    box-shadow: 5px 5px 10px 0 #D9D9D9;
+    width: 340px;
+    border-radius: 16px;
+}
+
+.section3 > .card > .content {
+    padding: 5px 15px 13px 13px;
+}
+
+.section3 > .card img {
+    width: 100%;
+    height: 191px;
+}
+
+.green {
+    font-size: 14px;
+    color: var(--primary-color);
+    font-weight: 400;
+    padding-bottom: 7px;
+}
+
+.card > .content > h3 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.secondary {
+    font-size: 14px;
+    color: var(--second-color);
+    padding-top: 7px;
+    font-weight: 500;
+}
+
+.lorem {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    padding-top: 7px;
+}
+
+.secondary > span {
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+footer {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+footer > p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
 }
