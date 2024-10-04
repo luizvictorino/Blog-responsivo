@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: #02A28F;
-    --SECONDARY-COLOR: #616161;
+    --secondary-color: #616161;
 }
 
 * {
@@ -24,6 +24,14 @@
 
 .color-green {
     background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+}
+
+.color-greens {
+    background-color: var(--primary-color);
+    color: #FFF;
+    font-weight: 700;
 }
 
 header {
@@ -41,7 +49,82 @@ header {
 main {
     display: grid;
     grid-template-columns: 744px, 361px;
+    margin-left: 156px;
+    padding-top: 40px;
 }
+
+.image-container {
+    position: relative;
+    display: inline-block;
+
+    img {
+        width: 744px;
+        height: 396px;
+    }
+
+    .text-baner {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: white;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9));
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        line-height: 30px;;
+
+        p.normale {
+            font-size: 16px;
+            font-weight: 100;
+        }
+
+        h2 {
+            font-size: 32px;
+        }
+
+        p.font-format {
+            font-size: 16px;
+            font-weight: 700;
+
+            span {
+                font-weight: 100;
+            }
+        }
+
+    }
+}
+
+.article-post {
+    width: 744px;
+    padding: 20px 0;
+
+
+    .title-post {
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        border-radius: 8px;
+
+        h2 {
+            font-size: 20px;
+        }
+
+        a {
+            font-size: 14px;
+            color: #FFF;
+            font-weight: 1;
+        }
+    }
+}
+
+
+
 
 
 footer {
