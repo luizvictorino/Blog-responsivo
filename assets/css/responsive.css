@@ -24,7 +24,7 @@
 @media (max-width: 1024px) {
     main {
         padding: 50px 100px 70px 100px;
-
+        margin: 20px;
         /* .section-left {}
 
         .section-right {} */
