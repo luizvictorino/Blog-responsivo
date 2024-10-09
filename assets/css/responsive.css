@@ -1,20 +1,17 @@
 @media (max-width: 1300px) {
   header > .text-title {
-    margin-left: 20px;
+    margin-left: 2rem;
   }
 
   .main {
-    padding: 50px 15px 70px 15px;
+    padding: 50px 0 70px 0;
+    justify-content: center;
     margin: 0;
     grid-template-columns: 600px 361px;
-    
   }
 
- .section-left {
-    width: 600px;
-  }
-
-  .main > .section-left > .image-container > img {
+  .main > .section-left > .image-container > img, 
+  .section-left {
     width: 600px;
   }
 
@@ -36,8 +33,38 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
 
+  header .text-title {
+    font-size: 32px;
+    margin-left: 30px;
+  }
+  
+  .main {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-left,
+  .section-right,
+  .main .section-left > .image-container > img {
+    width: 700px;
+  }
+
+  .main > .section-left > .article-post> .card {
+    column-gap: 110px;
+  }
+
+  .main > .section-left > .article-post> .card > .cards,
+  .main > .section-left > .article-post> .card > .cards > img  {
+    width: 340px;
+  }
+
+  .main > .section-left > .article-post> .card > .cards > .content {
+    height: 220px;
+  }
 }
 
 @media (max-width: 768px) {
