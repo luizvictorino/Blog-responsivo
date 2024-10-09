@@ -4,7 +4,7 @@
   }
 
   .main {
-    padding: 50px 0 70px 20px;
+    padding: 50px 15px 70px 15px;
     margin: 0;
     grid-template-columns: 600px 361px;
     
@@ -20,33 +20,20 @@
 
   .main > .section-left > .article-post> .card {
     grid-template-columns: repeat(2, 250px);
-    column-gap: 0px;
+    column-gap: 60px;
     margin: 0;
     padding: 0;
-
   }
 
   .main > .section-left > .article-post> .card > .cards,
   .main > .section-left > .article-post> .card > .cards > img  {
-    width: 250px;
+    width: 290px;
     gap: 5px;
   }
 
-  /* main {
-
-        padding: 50px 0 70px 40px;
-
-        .section-left {
-            width: 700px;
-
-            .image-container {
-
-                img {
-                    width: 700px;
-                }
-            }
-        }
-    } */
+  .main > .section-left > .article-post> .card > .cards > .content {
+    height: 250px;
+  }
 }
 
 @media (max-width: 1024px) {
